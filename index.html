@@ -7,7 +7,6 @@
 <body>
   <script>
     var myHeaders = new Headers();
-    myHeaders.append("x-api-key", "0cNyb67XWS2gSQk4QDu15AjJUiEAeaH64ma7yhM5");
     
     var requestOptions = {
       method: 'GET',
@@ -15,7 +14,7 @@
       redirect: 'follow'
     };
 
-    fetch("https://79vsjq91va.execute-api.ca-central-1.amazonaws.com/test?=", requestOptions)
+    fetch("", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
